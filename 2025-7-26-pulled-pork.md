@@ -4,7 +4,7 @@ date: 2025-07-26 08:50:00 -0700
 slug: pulled-pork        # becomes /recipes/pulled-pork/
 ---
 
-# Pulled Pork Sandwiches with Creamy Cole Slaw
+# Pulled Pork Sandwiches with Creamy 2Cole Slaw
 
 ## Pulled Pork Sandwich Ingredients
 - 3 lbs pork shoulder (bone-in or boneless)  
