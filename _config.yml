@@ -25,7 +25,7 @@ plugins:
 collections:
   recipes:
     output: true
-    permalink: /recipes/:slug/     # pretty URL => /recipes/pizza/
+    permalink: /_recipes/:slug/     # pretty URL => /recipes/pizza/
 
 # -----------------------------
 #  Defaults 
