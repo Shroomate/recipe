@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Latest Recipes
 ---
 
@@ -9,10 +9,10 @@ title: Latest Recipes
 
 <ul class="recipe-list">
   {% assign newest = site.recipes | sort: "date" | reverse %}
-  {% for recipe in newest limit: paginator.per_page offset: paginator.page*9 - 9 %}
+  {% for recipe in newest %}
     <li>
       <a href="{{ recipe.url | relative_url }}">{{ recipe.title }}</a>
-      <span class="date">{{ recipe.date | date: "%b %d, %Y" }}</span>
+      <span class="date">{{ recipe.date | date: "%b %d, %Y" }}</span>
     </li>
   {% endfor %}
 </ul>

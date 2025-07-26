@@ -1,5 +1,5 @@
 # ----------  Site basics ----------
-title: GPT Kitchen
+title: GPT Kitchen
 description: AI‑generated recipes – new dish every push
 baseurl: ""           # leave blank for project‑root Pages sites
 url: "https://shroomate.github.io/recipe"   # ← replace
@@ -7,7 +7,7 @@ url: "https://shroomate.github.io/recipe"   # ← replace
 # -----------------------------
 #  Theme
 # -----------------------------
-# Use the official Pages “Minimal” remote‑theme
+# Use the official Pages "Minimal" remote‑theme
 remote_theme: pages-themes/minimal@v0.2.0    # pin a tag for reproducibility
 
 # -----------------------------
@@ -16,8 +16,6 @@ remote_theme: pages-themes/minimal@v0.2.0    # pin a tag for reproducibility
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate                # native paginate
-  # - jekyll-paginate-v2           # swap if you need v2 features
 
 # -----------------------------
 #  Collections
@@ -25,10 +23,10 @@ plugins:
 collections:
   recipes:
     output: true
-    permalink: /_recipes/:slug/     # pretty URL => /recipes/pizza/
+    permalink: /recipes/:slug/     # pretty URL => /recipes/pulled-pork/
 
 # -----------------------------
-#  Defaults 
+#  Defaults 
 # -----------------------------
 defaults:
   - scope:
@@ -36,16 +34,10 @@ defaults:
       type: recipes
     values:
       layout: recipe
-      author: GPT Chef
+      author: GPT Chef
 
 # -----------------------------
-#  Pagination for home page
-# -----------------------------
-paginate: 9                        # 9 recipes per page
-paginate_path: "/page:num"
-
-# -----------------------------
-#  Optional “Minimal” settings
+#  Optional "Minimal" settings
 # -----------------------------
 logo: /assets/img/logo.png         # will appear top‑left if provided
 show_downloads: false              # hide the GitHub repo download buttons
