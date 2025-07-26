@@ -13,5 +13,5 @@ This is a test page to verify the Jekyll setup is working.
 Number of recipes: {{ recipe_count }}
 
 {% for recipe in site.recipes %}
-- [{{ recipe.title }}]({{ recipe.url }})
+- [{{ recipe.title }}]({{ recipe.url }}) - URL: {{ recipe.url }}
 {% endfor %} 
