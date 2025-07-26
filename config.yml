@@ -1,0 +1,35 @@
+# ----------  Site basics ----------
+title: GPT Kitchen
+description: AI‑generated recipes – new dish every push
+baseurl: ""           # leave blank for project‑root Pages sites
+url: "https://<username>.github.io/<repo>"   # ← replace
+
+# ----------  Theme / build ----------
+theme: minima         # keeps it simple; swap for another if you like
+plugins:
+  - jekyll-feed       # RSS feed at /feed.xml
+  - jekyll-sitemap    # sitemap.xml for SEO
+
+# ----------  Collections ----------
+# Everything you (or n8n) drop into _recipes/ becomes a page
+collections:
+  recipes:
+    output: true                    # publish them
+    permalink: /recipes/:slug/      # pretty URL => /recipes/pizza/
+    sort_by: date                   # newest first by default
+
+# ----------  Default front‑matter values ----------
+defaults:
+  - scope:
+      path: ""          # any file
+      type: recipes
+    values:
+      layout: recipe    # look for _layouts/recipe.html
+      author: GPT Chef
+
+# ----------  Pagination for /index.html ----------
+paginate: 10
+paginate_path: "/page:num"          # e.g. /page2/
+
+# Optional: exclude stuff Jekyll shouldn’t copy verbatim
+# exclude: ["README.md", "n8n-workflow.json"]
