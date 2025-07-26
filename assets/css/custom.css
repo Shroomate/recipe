@@ -1,0 +1,6 @@
+/* Minimal tweaks – autoloaded because site.css already includes all
+   *.css files in /assets. If not, add {% include head-custom.html %}. */
+.recipe-title   { margin-top:   0; font-size: 2.2rem; font-weight: 700; }
+.recipe-meta    { color: #888;  font-size: 0.9rem;   margin-bottom: 1.5rem; }
+.recipe-content { line-height: 1.6; }
+.back-home      { margin-top: 2rem; }
