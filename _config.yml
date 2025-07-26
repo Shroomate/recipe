@@ -4,31 +4,49 @@ description: AI‑generated recipes – new dish every push
 baseurl: ""           # leave blank for project‑root Pages sites
 url: "https://shroomate.github.io/recipe"   # ← replace
 
-# ----------  Theme / build ----------
-remote_theme: pages-themes/minimal@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+# -----------------------------
+#  Theme
+# -----------------------------
+# Use the official Pages “Minimal” remote‑theme
+remote_theme: pages-themes/minimal@v0.2.0    # pin a tag for reproducibility
 
-# ----------  Collections ----------
-# Everything you (or n8n) drop into _recipes/ becomes a page
+# -----------------------------
+#  Plugins (GitHub Pages‑safe)
+# -----------------------------
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate                # native paginate
+  # - jekyll-paginate-v2           # swap if you need v2 features
+
+# -----------------------------
+#  Collections
+# -----------------------------
 collections:
   recipes:
-    output: true                    # publish them
-    permalink: /recipes/:slug/      # pretty URL => /recipes/pizza/
-    sort_by: date                   # newest first by default
+    output: true
+    permalink: /recipes/:slug/     # pretty URL => /recipes/pizza/
 
-# ----------  Default front‑matter values ----------
+# -----------------------------
+#  Defaults 
+# -----------------------------
 defaults:
   - scope:
-      path: ""          # any file
+      path: ""                     # any path
       type: recipes
     values:
-      layout: recipe    # look for _layouts/recipe.html
-      author: GPT Chef
+      layout: recipe
+      author: GPT Chef
 
-# ----------  Pagination for /index.html ----------
-paginate: 10
-paginate_path: "/page:num"          # e.g. /page2/
+# -----------------------------
+#  Pagination for home page
+# -----------------------------
+paginate: 9                        # 9 recipes per page
+paginate_path: "/page:num"
 
-# Optional: exclude stuff Jekyll shouldn’t copy verbatim
-# exclude: ["README.md", "n8n-workflow.json"]
+# -----------------------------
+#  Optional “Minimal” settings
+# -----------------------------
+logo: /assets/img/logo.png         # will appear top‑left if provided
+show_downloads: false              # hide the GitHub repo download buttons
+google_analytics: ""               # add UA‑XXXX to enable
