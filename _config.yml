@@ -2,13 +2,12 @@
 title: GPT Kitchen
 description: AI‑generated recipes – new dish every push
 baseurl: ""           # leave blank for project‑root Pages sites
-url: "https://<username>.github.io/<repo>"   # ← replace
+url: "https://shroomate.github.io/recipe"   # ← replace
 
 # ----------  Theme / build ----------
-theme: minima         # keeps it simple; swap for another if you like
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
-  - jekyll-feed       # RSS feed at /feed.xml
-  - jekyll-sitemap    # sitemap.xml for SEO
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 
 # ----------  Collections ----------
 # Everything you (or n8n) drop into _recipes/ becomes a page
