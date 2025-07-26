@@ -1,7 +1,7 @@
 # ----------  Site basics ----------
 title: GPT Kitchen
 description: AI‑generated recipes – new dish every push
-baseurl: ""           # leave blank for project‑root Pages sites
+baseurl: "/recipe"    # include repository name for GitHub Pages
 url: "https://shroomate.github.io/recipe"   # ← replace
 
 # -----------------------------
