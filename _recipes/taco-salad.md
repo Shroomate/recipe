@@ -1,8 +1,8 @@
 ---
 title: Taco Salad
-date: 2024-04-27 12:00:00 -0700
+date: 2025-07-26 23:39:29 -0700
 slug: taco-salad
-layout: recipe
+layout: default
 ---
 
 # Taco Salad

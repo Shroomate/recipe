@@ -1,8 +1,8 @@
 ---
 title: Chicken and Carrot Pasta
-date: 2024-04-27 12:00:00 -0700
+date: 2025-07-26 23:39:29 -0700
 slug: chicken-and-carrot-pasta
-layout: recipe
+layout: default
 ---
 
 # Chicken and Carrot Pasta
