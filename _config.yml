@@ -1,6 +1,6 @@
 # ----------  Site basics ----------
 title: GPT Kitchen
-description: AI‑generated recipes – new dish every push
+description: AI-generated recipes - new dish every push
 baseurl: "/recipe"    # include repository name for GitHub Pages
 url: "https://shroomate.github.io/recipe"
 
@@ -8,7 +8,7 @@ url: "https://shroomate.github.io/recipe"
 #  Theme
 # -----------------------------
 # Use the cayman theme which is supported by GitHub Pages
-theme: jekyll-theme-cayman
+theme: cayman
 
 # -----------------------------
 #  Plugins (GitHub Pages‑safe)
