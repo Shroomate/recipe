@@ -2,7 +2,7 @@
 title: Chicken and Lentil Soup
 date: 2025-07-26 23:39:29 -0700
 slug: chicken-and-lentil-soup
-layout: default
+layout: recipe
 ---
 
 # Chicken and Lentil Soup

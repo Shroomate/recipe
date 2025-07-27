@@ -2,22 +2,20 @@
 layout: default
 ---
 
-<div class="wrapper">
-  <article class="recipe">
-    <header>
-      <h1 class="recipe-title">{{ page.title }}</h1>
-      <p class="recipe-meta">
-        Published {{ page.date | date: "%B&nbsp;%d, %Y" }}
-      </p>
-      <hr />
-    </header>
-
-    <section class="recipe-content">
-      {{ content }}
-    </section>
-
-    <p class="back-home">
-      <a href="{{ site.baseurl }}/">← Back to latest recipes</a>
+<article class="recipe">
+  <header>
+    <h1 class="recipe-title">{{ page.title }}</h1>
+    <p class="recipe-meta">
+      Published {{ page.date | date: "%B&nbsp;%d, %Y" }}
     </p>
-  </article>
-</div>
+    <hr />
+  </header>
+
+  <section class="recipe-content">
+    {{ content }}
+  </section>
+
+  <p class="back-home">
+    <a href="{{ site.baseurl }}/">← Back to latest recipes</a>
+  </p>
+</article>

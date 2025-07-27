@@ -2,7 +2,7 @@
 title: Classic Margherita Pizza
 date: 2025-07-26 23:39:29 -0700
 slug: classic-margherita-pizza
-layout: default
+layout: recipe
 ---
 
 # Classic Margherita Pizza

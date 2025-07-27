@@ -2,7 +2,7 @@
 title: Beef Stroganoff
 date: 2025-07-26 23:39:29 -0700
 slug: beef-stroganoff
-layout: default
+layout: recipe
 ---
 
 # Beef Stroganoff

@@ -24,7 +24,7 @@ function generateMarkdown(recipe) {
 title: ${title}
 date: ${date}
 slug: ${slug}
-layout: ${layout || 'recipe'}
+layout: recipe
 ---
 
 # ${title}

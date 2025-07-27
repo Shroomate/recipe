@@ -2,13 +2,13 @@
 title: GPT Kitchen
 description: AI‑generated recipes – new dish every push
 baseurl: "/recipe"    # include repository name for GitHub Pages
-url: "https://shroomate.github.io/recipe"   # ← replace
+url: "https://shroomate.github.io/recipe"
 
 # -----------------------------
 #  Theme
 # -----------------------------
-# Using local layouts instead of remote theme
-# remote_theme: pages-themes/minimal@v0.2.0    # commented out
+# Use the minimal theme which is supported by GitHub Pages
+theme: minima
 
 # -----------------------------
 #  Plugins (GitHub Pages‑safe)
@@ -23,22 +23,26 @@ plugins:
 collections:
   recipes:
     output: true
-    permalink: /recipes/:slug/     # pretty URL => /recipes/pulled-pork/
+    permalink: /recipes/:slug/
 
 # -----------------------------
 #  Defaults 
 # -----------------------------
 defaults:
   - scope:
-      path: "_recipes"             # target the recipes collection directory
+      path: "_recipes"
       type: recipes
     values:
       layout: recipe
       author: GPT Chef
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
 
 # -----------------------------
-#  Optional "Minimal" settings
+#  Site settings
 # -----------------------------
-logo: /assets/img/logo.png         # will appear top‑left if provided
-show_downloads: false              # hide the GitHub repo download buttons
-google_analytics: ""               # add UA‑XXXX to enable
+show_downloads: false
+google_analytics: ""

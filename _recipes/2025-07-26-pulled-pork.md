@@ -2,7 +2,7 @@
 title: Pulled Pork Sandwiches with Creamy Cole Slaw
 date: 2025-07-26 23:39:29 -0700
 slug: pulled-pork        # becomes /recipes/pulled-pork/
-layout: default
+layout: recipe
 ---
 
 # Pulled Pork Sandwiches with Creamy 2Cole Slaw

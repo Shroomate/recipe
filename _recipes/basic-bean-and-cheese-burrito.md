@@ -2,7 +2,7 @@
 title: Basic Bean and Cheese Burrito
 date: 2025-07-26 23:39:29 -0700
 slug: basic-bean-and-cheese-burrito
-layout: default
+layout: recipe
 ---
 
 # Basic Bean and Cheese Burrito
