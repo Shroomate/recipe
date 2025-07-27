@@ -7,8 +7,8 @@ url: "https://shroomate.github.io/recipe"   # ← replace
 # -----------------------------
 #  Theme
 # -----------------------------
-# Use the official Pages "Minimal" remote‑theme
-remote_theme: pages-themes/minimal@v0.2.0    # pin a tag for reproducibility
+# Using local layouts instead of remote theme
+# remote_theme: pages-themes/minimal@v0.2.0    # commented out
 
 # -----------------------------
 #  Plugins (GitHub Pages‑safe)
