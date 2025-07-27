@@ -35,6 +35,7 @@ layout: recipe
 - [COOKING_TIP_OR_SUGGESTION]
 - [VARIATION_OR_SUBSTITUTION]
 - [SERVING_SUGGESTION]
+- [NUTRITION]
 ```
 
 ## Example Recipe
